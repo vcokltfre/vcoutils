@@ -2,7 +2,7 @@ import setuptools
 
 MODULES = 2
 CLASSES = 2
-BUGFIX = 0
+BUGFIX = 1
 
 VERSION = f"{MODULES}.{CLASSES}.{BUGFIX}"
 
@@ -15,6 +15,7 @@ setuptools.setup(
     name="vcoutils",
     author="vcokltfre",
     author_email="vcokltfre@gmail.com",
+    version=VERSION,
     url="https://github.com/vcokltfre/vcoutils",
     packages=setuptools.find_packages(),
     description="A collection of utlities I have made or adapted for convenience.",
