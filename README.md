@@ -5,6 +5,7 @@
 ### Current classes:
 
 - `LeakyBucket` and `LeakyBucketManager` from `leakybucket.py`
+- `Intents` from `intents.py`
 
 ### Current Decorators [discord.py](https://github.com/Rapptz/discord.py)
 

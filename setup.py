@@ -1,7 +1,7 @@
 import setuptools
 
-MODULES = 2
-CLASSES = 2
+MODULES = 3
+CLASSES = 3
 BUGFIX = 1
 
 VERSION = f"{MODULES}.{CLASSES}.{BUGFIX}"

@@ -7,3 +7,4 @@ __author__ = "vcokltfre"
 
 from .leakybucket import LeakyBucket, LeakyBucketManager
 from .extrachecks import has_any_permissions, has_any_guild_permissions
+from .intents import Intents
