@@ -6,10 +6,11 @@ class LeakyBucket:
         self.timeout = timeout
         self.items = []
 
-    def add(self):
+    def add(self) -> int:
         self.items.append((len(self.items), time()))
+        return self.get()
 
-    def get(self):
+    def get(self) -> int:
         items = []
         for item in self.items:
             if not item[1] + self.timeout < time():
@@ -29,13 +30,14 @@ class LeakyBucketManager:
         self.timeout = default_timeout
         self.buckets = {}
 
-    def add(self, name: str, timeout_override: int = None):
+    def add(self, name: str, timeout_override: int = None) -> int:
         if not name in self.buckets:
             self.buckets[name] = LeakyBucket(timeout_override if timeout_override else self.timeout)
 
         self.buckets[name].add()
+        return self.buckets[name].get()
 
-    def get(self, name: str):
+    def get(self, name: str) -> int:
         if not name in self.buckets:
             return 0
 
