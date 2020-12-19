@@ -1,6 +1,6 @@
 import setuptools
 
-MODULES = 3
+MODULES = 4
 CLASSES = 3
 BUGFIX = 1
 
