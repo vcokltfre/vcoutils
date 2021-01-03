@@ -6,7 +6,7 @@ BUGFIX = 1
 
 VERSION = f"{MODULES}.{CLASSES}.{BUGFIX}"
 
-REQS = []
+REQS = ["discord.py"]
 
 with open("README.md") as f:
     DESC = f.read()
